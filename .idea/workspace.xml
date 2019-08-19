@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d70481f0-5627-4210-aac8-516aff87e22c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Expr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/tool/GenerateAst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/AstPrinter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Crafting Interpreters/com/craftinginterpreters/lox/Expr$Binary.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Crafting Interpreters/com/craftinginterpreters/lox/Expr$Binary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Crafting Interpreters/com/craftinginterpreters/lox/Expr.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Crafting Interpreters/com/craftinginterpreters/lox/Expr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Crafting Interpreters/com/craftinginterpreters/tool/GenerateAst.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Crafting Interpreters/com/craftinginterpreters/tool/GenerateAst.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Expr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Expr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/craftinginterpreters/tool/GenerateAst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/tool/GenerateAst.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +49,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GenerateAst">
+  <component name="RunManager" selected="Application.AstPrinter">
+    <configuration name="AstPrinter" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.craftinginterpreters.lox.AstPrinter" />
+      <module name="Crafting Interpreters" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GenerateAst" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.craftinginterpreters.tool.GenerateAst" />
       <module name="Crafting Interpreters" />
@@ -64,6 +75,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.AstPrinter" />
       <item itemvalue="Application.GenerateAst" />
       <item itemvalue="Application.Main" />
     </list>
