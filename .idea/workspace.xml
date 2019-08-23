@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d70481f0-5627-4210-aac8-516aff87e22c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/RuntimeError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/lox_statements.lox" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Stmt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Crafting Interpreters/com/craftinginterpreters/lox/Lox.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Crafting Interpreters/com/craftinginterpreters/lox/Lox.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Crafting Interpreters/com/craftinginterpreters/tool/GenerateAst.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Crafting Interpreters/com/craftinginterpreters/tool/GenerateAst.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Interpreter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Lox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Lox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/craftinginterpreters/tool/GenerateAst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/tool/GenerateAst.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +34,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -47,7 +52,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Lox - interpreter">
     <configuration name="AstPrinter" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.craftinginterpreters.lox.AstPrinter" />
       <module name="Crafting Interpreters" />
@@ -63,7 +68,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+    <configuration name="Lox - file" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.craftinginterpreters.lox.Lox" />
+      <module name="Crafting Interpreters" />
+      <option name="PROGRAM_PARAMETERS" value="samples/lox_statements.lox" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lox - interpreter" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.craftinginterpreters.lox.Lox" />
       <module name="Crafting Interpreters" />
       <RunnerSettings RunnerId="Run" />
@@ -75,11 +88,12 @@
     <list>
       <item itemvalue="Application.AstPrinter" />
       <item itemvalue="Application.GenerateAst" />
-      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Lox - file" />
+      <item itemvalue="Application.Lox - interpreter" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Lox - interpreter" />
       </list>
     </recent_temporary>
   </component>
@@ -108,5 +122,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
