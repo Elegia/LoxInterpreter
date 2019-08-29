@@ -2,6 +2,11 @@ print "one";
 print true;
 print 2 + 1;
 
+// Expressions without a print statement should not display anything.
+3 * 2;
+1 + 1;
+
+// Testing scope (1)
 var a = "global a";
 var b = "global b";
 var c = "global c";
@@ -21,3 +26,11 @@ var c = "global c";
 print a;
 print b;
 print c;
+
+// Testing scope (2)
+
+var a = 1;
+{
+    var a = a + 2; // Right hand side init expression is evaluated before assignment, thus a + 2 should resolve to 3.
+    print a;
+}

@@ -5,8 +5,11 @@ import java.util.List;
 class Interpreter implements Expr.Visitor<Object>, Stmt.Visitor<Object> {
 
     private Environment environment = new Environment();
+    /// If true, print expression results
+    private Boolean isREPL;
 
-    void interpret(List<Stmt> statements) {
+    void interpret(List<Stmt> statements, Boolean isREPL) {
+        this.isREPL = isREPL;
         try {
             for (Stmt statement : statements) {
                 execute(statement);
@@ -45,7 +48,10 @@ class Interpreter implements Expr.Visitor<Object>, Stmt.Visitor<Object> {
 
     @Override
     public Void visitExpressionStmt(Stmt.Expression stmt) {
-        evaluate(stmt.expression);
+        Object value = evaluate(stmt.expression);
+        if (this.isREPL) {
+            System.out.println(stringify(value));
+        }
         return null;
     }
 
