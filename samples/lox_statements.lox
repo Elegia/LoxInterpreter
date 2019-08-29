@@ -34,3 +34,11 @@ var a = 1;
     var a = a + 2; // Right hand side init expression is evaluated before assignment, thus a + 2 should resolve to 3.
     print a;
 }
+
+// Testing conditional flow
+var a = true;
+var b = false;
+
+if (a) print "a = true"; else print "a = false";
+a = false;
+if (a) if (b) print "b = true"; else print "b = false"; else print "a = false";
