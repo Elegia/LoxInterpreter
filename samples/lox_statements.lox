@@ -42,3 +42,15 @@ var b = false;
 if (a) print "a = true"; else print "a = false";
 a = false;
 if (a) if (b) print "b = true"; else print "b = false"; else print "a = false";
+
+// Testing or & and operators
+print "hi" or 2; // Prints "hi"
+print nil or "yes"; // Prints "yet"
+print 1 and 2; // prints 2
+print false and true; // prints false
+print 2 > 1 and 5 < 10; // prints true
+
+print 2 > 1 and 5 > 10 or 10 > 5; // prints true
+print (2 > 1 and 5 > 10) or 10 > 5; // prints true (equal to the statement before)
+print 2 > 1 and (5 > 10 or 10 > 5); // prints true (equal to the statement before)
+print 2 > 1 and (5 > 10 or 10 > 50); // prints false

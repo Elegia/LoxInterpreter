@@ -49,6 +49,11 @@ public class AstPrinter implements Expr.Visitor<String> {
         return parenthesize(expr.name.lexeme);
     }
 
+    @Override
+    public String visitLogicalExpr(Expr.Logical expr) {
+        return "";
+    }
+
     public static void main(String[] args) {
         Expr expression = new Expr.Binary(
                 new Expr.Unary(
