@@ -68,6 +68,16 @@ public class Scanner {
             case '=': addToken(match('=') ? EQUAL_EQUAL : EQUAL); break;
             case '<': addToken(match('=') ? LESS_EQUAL : LESS); break;
             case '>': addToken(match('=') ? GREATER_EQUAL : GREATER); break;
+            case '|':
+                if (match('|')) {
+                    addToken(OR);
+                    break;
+                }
+            case '&':
+                if (match('&')) {
+                    addToken(AND);
+                    break;
+                }
             case '/':
                 if (match('/')) {
                     // A comment goes until the end of the line.

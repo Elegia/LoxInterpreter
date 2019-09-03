@@ -55,6 +55,16 @@ print (2 > 1 and 5 > 10) or 10 > 5; // prints true (equal to the statement befor
 print 2 > 1 and (5 > 10 or 10 > 5); // prints true (equal to the statement before)
 print 2 > 1 and (5 > 10 or 10 > 50); // prints false
 
+print "---------------------------";
+print "Testing || and && operators";
+print 1 && 2; // 2
+print 2 && 2; // 2
+print true || false; // true
+print false || true; // true
+print true && false; // false
+print false || false; // false
+print "---------------------------";
+
 // While loops
 
 // Fibonacci
@@ -77,8 +87,8 @@ for (var i = 0; i < 10; i = i + 1) {
     print i;
 }
 
-// The following should return a syntax error;
+// The following should loop forever.
 
-for (var i = 0; "a";) {
-    print "test";
-}
+//for (var i = 0; a;) {
+//    print "test";
+//}
