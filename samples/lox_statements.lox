@@ -54,3 +54,31 @@ print 2 > 1 and 5 > 10 or 10 > 5; // prints true
 print (2 > 1 and 5 > 10) or 10 > 5; // prints true (equal to the statement before)
 print 2 > 1 and (5 > 10 or 10 > 5); // prints true (equal to the statement before)
 print 2 > 1 and (5 > 10 or 10 > 50); // prints false
+
+// While loops
+
+// Fibonacci
+print "Testing Fibonacci with while loops";
+
+var a = 0;
+var b = 1;
+
+while (a < 1000) {
+  print a;
+  var temp = a;
+  a = b;
+  b = temp + b;
+}
+
+// For loop
+print "Testing for loops";
+
+for (var i = 0; i < 10; i = i + 1) {
+    print i;
+}
+
+// The following should return a syntax error;
+
+for (var i = 0; "a";) {
+    print "test";
+}
