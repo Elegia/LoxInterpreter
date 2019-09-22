@@ -92,3 +92,30 @@ for (var i = 0; i < 10; i = i + 1) {
 //for (var i = 0; a;) {
 //    print "test";
 //}
+
+// Test functions
+
+fun sayHi(first, last) {
+    print "Hi, " + first + " " + last + "!";
+}
+
+sayHi("Dear", "Reader");
+
+// Test recursion
+fun countDownFrom(n) {
+    if (n > 0) {
+        print "Counting " + n;
+        countDownFrom(n - 1);
+    }
+}
+countDownFrom(5);
+
+// Test return statements
+fun fibonacci(n) {
+    if (n <= 1) return n;
+    return fibonacci(n - 2) + fibonacci(n - 1);
+}
+
+for (var i = 0; i < 20; i = i + 1) {
+    print fibonacci(i);
+}

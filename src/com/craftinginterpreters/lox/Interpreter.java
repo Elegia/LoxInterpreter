@@ -74,6 +74,13 @@ class Interpreter implements Expr.Visitor<Object>, Stmt.Visitor<Object> {
     }
 
     @Override
+    public Void visitFunctionStmt(Stmt.Function stmt) {
+        LoxFunction function = new LoxFunction(stmt);
+        environment.define(stmt.name.lexeme, function);
+        return null;
+    }
+
+    @Override
     public Void visitIfStmt(Stmt.If stmt) {
         if (isTruthy(evaluate(stmt.condition))) {
             execute(stmt.thenBranch);
@@ -89,6 +96,13 @@ class Interpreter implements Expr.Visitor<Object>, Stmt.Visitor<Object> {
         Object value = evaluate(stmt.expression);
         System.out.println(stringify(value));
         return null;
+    }
+
+    @Override
+    public Void visitReturnStmt(Stmt.Return stmt) {
+        Object value = null;
+        if (stmt.value != null) value = evaluate(stmt.value);
+        throw new Return(value);
     }
 
     @Override
@@ -165,9 +179,10 @@ class Interpreter implements Expr.Visitor<Object>, Stmt.Visitor<Object> {
         if (!(left instanceof Double) || !(right instanceof Double)) {
             throw new RuntimeError(operator, "Operator must be numbers.");
         }
-        else if ((double)right == 0) {
+        if (operator.type == TokenType.SLASH && (double)right == 0) {
             throw new RuntimeError(operator, "Division by 0 is not allowed.");
         }
+
         return;
     }
     @Override
