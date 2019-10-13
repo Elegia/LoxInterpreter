@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d70481f0-5627-4210-aac8-516aff87e22c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Resolver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Crafting Interpreters/com/craftinginterpreters/lox/AstPrinter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Crafting Interpreters/com/craftinginterpreters/lox/AstPrinter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Crafting Interpreters/com/craftinginterpreters/lox/Expr$Binary.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Crafting Interpreters/com/craftinginterpreters/lox/Expr$Binary.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Crafting Interpreters/com/craftinginterpreters/lox/Expr$Grouping.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Crafting Interpreters/com/craftinginterpreters/lox/Expr$Grouping.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Crafting Interpreters/com/craftinginterpreters/lox/Expr$Literal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Crafting Interpreters/com/craftinginterpreters/lox/Expr$Literal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Crafting Interpreters/com/craftinginterpreters/lox/Expr$Unary.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Crafting Interpreters/com/craftinginterpreters/lox/Expr$Unary.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Crafting Interpreters/com/craftinginterpreters/lox/Expr$Visitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Crafting Interpreters/com/craftinginterpreters/lox/Expr$Visitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Crafting Interpreters/com/craftinginterpreters/lox/Expr.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Crafting Interpreters/com/craftinginterpreters/lox/Expr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Crafting Interpreters/com/craftinginterpreters/lox/Scanner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Crafting Interpreters/com/craftinginterpreters/lox/Scanner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Crafting Interpreters/com/craftinginterpreters/tool/GenerateAst.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Crafting Interpreters/com/craftinginterpreters/tool/GenerateAst.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/lox_statements.lox" beforeDir="false" afterPath="$PROJECT_DIR$/samples/lox_statements.lox" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Environment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Environment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Interpreter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Stmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Stmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Lox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Lox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Resolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Resolver.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
